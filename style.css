@@ -28,30 +28,17 @@ body {
     align-items: center;
 }
 
-/* Landscape Enforcement */
-#landscape-warning {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--bg-color);
-    z-index: 9999;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
-
-@media screen and (orientation: portrait) and (max-width: 768px) {
-    #landscape-warning {
+/* Rotation logic for Game Screen in Portrait */
+@media screen and (orientation: portrait) {
+    #game-screen.active {
         display: flex;
-    }
-
-    #app {
-        display: none;
+        width: 100vh;
+        height: 100vw;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
+        z-index: 9999;
     }
 }
 

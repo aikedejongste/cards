@@ -70,24 +70,38 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.exitBtn.addEventListener('click', showStartScreen);
 
         // Card Interaction (Next Question)
-        elements.card.addEventListener('click', nextCard);
+        elements.card.addEventListener('click', () => nextCard('left'));
 
         // Basic Swipe Support
         let touchStartX = 0;
+        let touchStartY = 0;
         let touchEndX = 0;
+        let touchEndY = 0;
 
         elements.card.addEventListener('touchstart', e => {
             touchStartX = e.changedTouches[0].screenX;
+            touchStartY = e.changedTouches[0].screenY;
         });
 
         elements.card.addEventListener('touchend', e => {
             touchEndX = e.changedTouches[0].screenX;
+            touchEndY = e.changedTouches[0].screenY;
             handleSwipe();
         });
 
         function handleSwipe() {
-            if (touchEndX < touchStartX - 50) nextCard('left');
-            if (touchEndX > touchStartX + 50) nextCard('right');
+            const isPortrait = window.innerHeight > window.innerWidth;
+
+            if (isPortrait) {
+                // In portrait, visual "left/right" corresponds to physical Up/Down (Y axis) due to rotation
+                // Swipe Up (physically) -> Visually Left -> Next Card
+                if (touchEndY < touchStartY - 50) nextCard('left');
+                if (touchEndY > touchStartY + 50) nextCard('right');
+            } else {
+                // In landscape, visual "left/right" corresponds to physical Left/Right (X axis)
+                if (touchEndX < touchStartX - 50) nextCard('left');
+                if (touchEndX > touchStartX + 50) nextCard('right');
+            }
         }
     }
 
@@ -98,21 +112,15 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // Fullscreen & Orientation Lock
+        // Fullscreen only - removed orientation lock
         try {
             if (document.documentElement.requestFullscreen) {
                 await document.documentElement.requestFullscreen();
             } else if (document.documentElement.webkitRequestFullscreen) {
                 await document.documentElement.webkitRequestFullscreen();
             }
-
-            if (screen.orientation && screen.orientation.lock) {
-                await screen.orientation.lock('landscape').catch(() => {
-                    console.log('Orientation lock not supported or denied');
-                });
-            }
         } catch (e) {
-            console.log('Fullscreen/Orientation error:', e);
+            console.log('Fullscreen error:', e);
         }
 
         state.currentIndex = 0;
