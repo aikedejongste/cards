@@ -1,52 +1,347 @@
 [
     {
         "id": 1,
-        "text": "What is your favorite childhood memory?",
+        "text": "What was your favorite moment from yesterday?",
         "category": "neutral"
     },
     {
         "id": 2,
-        "text": "If you could travel anywhere tomorrow, where would you go?",
+        "text": "you won an award for changing the world, what was it for?",
         "category": "neutral"
     },
     {
         "id": 3,
-        "text": "What is a skill you've always wanted to learn?",
+        "text": "What sexual experiences would you like to have?",
         "category": "neutral"
     },
     {
         "id": 4,
-        "text": "What is the most adventurous thing you've ever done?",
+        "text": "When was the last time you fell in love?",
         "category": "neutral"
     },
     {
         "id": 5,
-        "text": "Who has had the biggest influence on your life?",
+        "text": "It's skillshare night. What will you talk about?",
         "category": "neutral"
     },
     {
         "id": 6,
-        "text": "What is your biggest fear?",
-        "category": "spicy"
+        "text": "If you had to convince someone you are really smart, what would you do?",
+        "category": "neutral"
     },
     {
         "id": 7,
-        "text": "What is a secret you've never told anyone?",
-        "category": "spicy"
+        "text": "what strong point is also your weakness?",
+        "category": "neutral"
     },
     {
         "id": 8,
-        "text": "What is the most embarrassing thing that has happened to you recently?",
-        "category": "spicy"
+        "text": "What is something you have bought this year and still value?",
+        "category": "neutral"
     },
     {
         "id": 9,
-        "text": "If you could change one thing about your past, what would it be?",
-        "category": "spicy"
+        "text": "What is a memorable weekend you've had?",
+        "category": "neutral"
     },
     {
         "id": 10,
-        "text": "What is your most controversial opinion?",
-        "category": "spicy"
+        "text": "If money and status were no object what career would you choose?",
+        "category": "neutral"
+    },
+    {
+        "id": 11,
+        "text": "What is your definition of success? And with money out of the equation?",
+        "category": "neutral"
+    },
+    {
+        "id": 12,
+        "text": "What makes you happy?",
+        "category": "neutral"
+    },
+    {
+        "id": 13,
+        "text": "What makes you feel alive?",
+        "category": "neutral"
+    },
+    {
+        "id": 14,
+        "text": "What's a good advice you have received?",
+        "category": "neutral"
+    },
+    {
+        "id": 15,
+        "text": "What's a compliment you received that meant a lot to you?",
+        "category": "neutral"
+    },
+    {
+        "id": 16,
+        "text": "What is your idea of a perfect day?",
+        "category": "neutral"
+    },
+    {
+        "id": 17,
+        "text": "What is a thing that you wish people could understand about you better?",
+        "category": "neutral"
+    },
+    {
+        "id": 18,
+        "text": "What is the last thing you did for the first time?",
+        "category": "neutral"
+    },
+    {
+        "id": 19,
+        "text": "What are you proud of?",
+        "category": "neutral"
+    },
+    {
+        "id": 20,
+        "text": "If you could time travel, when would you go?",
+        "category": "neutral"
+    },
+    {
+        "id": 21,
+        "text": "What is the hardest thing you said no to lately?",
+        "category": "neutral"
+    },
+    {
+        "id": 22,
+        "text": "When did you last think “no, not again”?",
+        "category": "neutral"
+    },
+    {
+        "id": 23,
+        "text": "What is a non popular opinion that you hold?",
+        "category": "neutral"
+    },
+    {
+        "id": 24,
+        "text": "What charges you? What drains you?",
+        "category": "neutral"
+    },
+    {
+        "id": 25,
+        "text": "What are you content about in your life right now?",
+        "category": "neutral"
+    },
+    {
+        "id": 26,
+        "text": "What's a period in your life when you were content? What about it could you incorporate into your current life?",
+        "category": "neutral"
+    },
+    {
+        "id": 27,
+        "text": "What's a routine that you keep and are proud of?",
+        "category": "neutral"
+    },
+    {
+        "id": 28,
+        "text": "What is something good in your life that resulted from something bad?",
+        "category": "neutral"
+    },
+    {
+        "id": 29,
+        "text": "What's the weirdest way you've been hit on?",
+        "category": "neutral"
+    },
+    {
+        "id": 30,
+        "text": "What's a weird thing you find attractive?",
+        "category": "neutral"
+    },
+    {
+        "id": 31,
+        "text": "what is a stereotype of your [gender, race, etc] that is not true for you?",
+        "category": "neutral"
+    },
+    {
+        "id": 32,
+        "text": "what's a thing you let go off, that you wish you hadn't?",
+        "category": "neutral"
+    },
+    {
+        "id": 33,
+        "text": "which podcaster do you admire and what do you disagree with them about?",
+        "category": "neutral"
+    },
+    {
+        "id": 34,
+        "text": "what is a service that you pay for and is worth the money",
+        "category": "neutral"
+    },
+    {
+        "id": 35,
+        "text": "What's something that happened to you under the influence of substances?",
+        "category": "neutral"
+    },
+    {
+        "id": 36,
+        "text": "What's a cringe moment you had?",
+        "category": "neutral"
+    },
+    {
+        "id": 37,
+        "text": "What is one thing where you resemble your parents, and one where you are the opposite?",
+        "category": "neutral"
+    },
+    {
+        "id": 38,
+        "text": "Share an interesting fact",
+        "category": "neutral"
+    },
+    {
+        "id": 39,
+        "text": "What are signs that someone is right for you?",
+        "category": "neutral"
+    },
+    {
+        "id": 40,
+        "text": "how can we help you right now?",
+        "category": "neutral"
+    },
+    {
+        "id": 41,
+        "text": "If you could teleport, where would you go?",
+        "category": "neutral"
+    },
+    {
+        "id": 42,
+        "text": "what do you think is a good predictor of relationship success?",
+        "category": "neutral"
+    },
+    {
+        "id": 43,
+        "text": "Give a sex tip or sex advice",
+        "category": "neutral"
+    },
+    {
+        "id": 44,
+        "text": "Tell us about a paranormal experience you've had",
+        "category": "neutral"
+    },
+    {
+        "id": 45,
+        "text": "Tell us about an encounter you had with the police",
+        "category": "neutral"
+    },
+    {
+        "id": 46,
+        "text": "What's something you've never done and want to do before you die",
+        "category": "neutral"
+    },
+    {
+        "id": 47,
+        "text": "What's a bold decision you've made?",
+        "category": "neutral"
+    },
+    {
+        "id": 48,
+        "text": "What's something you changed your mind about?",
+        "category": "neutral"
+    },
+    {
+        "id": 49,
+        "text": "What stands out in your diet or eating habits?",
+        "category": "neutral"
+    },
+    {
+        "id": 50,
+        "text": "What's a song that reminds you of an event, and what's the event?",
+        "category": "neutral"
+    },
+    {
+        "id": 51,
+        "text": "What's something someone said you still think about?",
+        "category": "neutral"
+    },
+    {
+        "id": 52,
+        "text": "When were you confident but still wrong",
+        "category": "neutral"
+    },
+    {
+        "id": 53,
+        "text": "What is a lie that you've told?",
+        "category": "neutral"
+    },
+    {
+        "id": 54,
+        "text": "If there were no consequences, what's your ideal living arrangement? [alone / family / community / a mix / ... ]",
+        "category": "neutral"
+    },
+    {
+        "id": 55,
+        "text": "What's one thing you want to achieve before your next birthday / milestone birthday?",
+        "category": "neutral"
+    },
+    {
+        "id": 56,
+        "text": "What's a false assumption people make about you?",
+        "category": "neutral"
+    },
+    {
+        "id": 57,
+        "text": "Name a strange thing you have done for money",
+        "category": "neutral"
+    },
+    {
+        "id": 58,
+        "text": "What is the closest you've been to death?",
+        "category": "neutral"
+    },
+    {
+        "id": 59,
+        "text": "What is something exciting in your life right now?",
+        "category": "neutral"
+    },
+    {
+        "id": 60,
+        "text": "What's a relationship obstacle you've overcome, and what's the lesson there?",
+        "category": "neutral"
+    },
+    {
+        "id": 61,
+        "text": "What's a fun sexual/sensual experience that you had",
+        "category": "neutral"
+    },
+    {
+        "id": 62,
+        "text": "What's a weird coincidence or synchronicity you've had",
+        "category": "neutral"
+    },
+    {
+        "id": 63,
+        "text": "What were your 15 minutes of fame?",
+        "category": "neutral"
+    },
+    {
+        "id": 64,
+        "text": "What's a meaningful thing you share with someone? (physical or digital)",
+        "category": "neutral"
+    },
+    {
+        "id": 65,
+        "text": "What's the best thing you got from a bad relationship or friendship?",
+        "category": "neutral"
+    },
+    {
+        "id": 66,
+        "text": "What is something good about your relationship?",
+        "category": "neutral"
+    },
+    {
+        "id": 67,
+        "text": "what's a nice thing a stranger has done for you?",
+        "category": "neutral"
+    },
+    {
+        "id": 68,
+        "text": "what's a nice thing you've done for a stranger",
+        "category": "neutral"
+    },
+    {
+        "id": 69,
+        "text": "What's a positive side of being single, for you?",
+        "category": "neutral"
     }
 ]
