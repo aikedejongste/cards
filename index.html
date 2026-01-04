@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Cards</title>
+    <meta name="description" content="A conversation starter card game.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="landscape-warning">
+        <p>Please rotate your device to landscape mode.</p>
+    </div>
+
+    <main id="app">
+        <!-- Start Screen -->
+        <section id="start-screen" class="screen active">
+            <div class="content">
+                <h1>Cards</h1>
+                <p class="intro">Deep conversations, started simply.</p>
+                
+                <div class="controls">
+                    <div class="control-group">
+                        <label>Card Set</label>
+                        <div class="toggle-group">
+                            <button class="set-btn active" data-set="all">All</button>
+                            <button class="set-btn" data-set="neutral">Neutral</button>
+                            <button class="set-btn" data-set="spicy">Spicy</button>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="shuffle-toggle">Shuffle</label>
+                        <input type="checkbox" id="shuffle-toggle" checked>
+                    </div>
+                </div>
+
+                <button id="start-btn" class="primary-btn">Start Game</button>
+            </div>
+        </section>
+
+        <!-- Game Screen -->
+        <section id="game-screen" class="screen">
+            <button id="exit-btn" aria-label="Exit to menu">×</button>
+            
+            <div id="card-container">
+                <div id="card">
+                    <div class="card-content">
+                        <p id="question-text">Loading...</p>
+                    </div>
+                    <div class="card-hint">Swipe or tap for next</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
