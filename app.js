@@ -51,12 +51,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function setupEventListeners() {
-        // Set Selection
-        elements.setBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                elements.setBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                state.options.set = btn.dataset.set;
+        // Set Selection (Radio Buttons)
+        document.querySelectorAll('input[name="set"]').forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                state.options.set = e.target.value;
             });
         });
 
@@ -93,11 +91,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function startGame() {
+    async function startGame() {
         prepareQuestions();
         if (state.currentSet.length === 0) {
             alert('No questions found for this selection.');
             return;
+        }
+
+        // Fullscreen & Orientation Lock
+        try {
+            if (document.documentElement.requestFullscreen) {
+                await document.documentElement.requestFullscreen();
+            } else if (document.documentElement.webkitRequestFullscreen) {
+                await document.documentElement.webkitRequestFullscreen();
+            }
+
+            if (screen.orientation && screen.orientation.lock) {
+                await screen.orientation.lock('landscape').catch(() => {
+                    console.log('Orientation lock not supported or denied');
+                });
+            }
+        } catch (e) {
+            console.log('Fullscreen/Orientation error:', e);
         }
 
         state.currentIndex = 0;
@@ -127,6 +142,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function showStartScreen() {
+        // Exit fullscreen on return to menu
+        if (document.exitFullscreen) {
+            document.exitFullscreen().catch(err => console.log(err));
+        }
+
         elements.gameScreen.classList.remove('active');
         elements.startScreen.classList.add('active');
         // minor delay to reset card state
@@ -150,14 +170,21 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.card.classList.add('slide-in');
     }
 
+    let isAnimating = false;
+
     function nextCard(direction = 'left') {
+        if (isAnimating) return;
+        isAnimating = true;
+
         const exitClass = direction === 'right' ? 'slide-out-right' : 'slide-out-left';
 
         elements.card.classList.add(exitClass);
 
+        // Total delay: Animation time (400ms) + User pause (200ms)
         setTimeout(() => {
             state.currentIndex = (state.currentIndex + 1) % state.currentSet.length;
             displayCard();
-        }, 300); // Wait for animation
+            isAnimating = false;
+        }, 600);
     }
 });

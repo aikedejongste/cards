@@ -4,9 +4,9 @@ This repository contains the code for a card game with conversation starters. Th
 
 The JSON supports selections of cards. So when you visit the web app you see a really short introduction and you can choose a set of cards. You can choose all cards, spicy cards, neutral cards and maybe more selections in the future. If there are no selections in the JSON only show all cards. And you can also select if the cards are shuffled or not. If possible the JSON file should be minified or base64 encoded before deployment so it is a little bit harder for users to download the JSON file with all the questions. Of course it cannot be completely avoided that they copy all questions but it should be a bit more difficult.
 
-The layout works on desktop and on mobile. And after the start screen where you choose a set of cards and if the cards are shuffled or not you see a card and you can answer it. You cannot enter an answer, the app only shows the question. 
+The layout works on desktop and on mobile. On mobile, the app automatically attempts to enter landscape mode and hide browser chrome (fullscreen) when you start the game, to provide an immersive experience.
 
-The question is shown on a card and you can swipe left or right to go to the next question. You cannot go back. There is a small cross in the top right corner to go back to the start screen. On mobile the layout is in landscape mode, so you'll have to turn your phone sideways. The card looks like a rectangular note card with rounded corners. It important that it looks nice. We're targeting a minimalist and functional design.
+The question is shown on a card and you can swipe left or right to go to the next question with a satisfying animation. The next card appears after a brief pause. There is a small cross in the top right corner to go back to the start screen. The card looks like a rectangular note card with rounded corners, using a bold, readable handwriting font designed for clear visibility even from a distance.
 
 This is quite a simple app so the technology to use is up to the AI. React might be overkill. Ease of use and maintainability are important. 
 
