@@ -130,8 +130,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function prepareQuestions() {
         let filtered = state.questions;
+        // Since all questions are currently neutral, and we want to prevent empty sets if user selects Spicy
+        // We will just ignore the filter or default to all if the filter returns empty
         if (state.options.set !== 'all') {
-            filtered = state.questions.filter(q => q.category === state.options.set);
+            const tempFiltered = state.questions.filter(q => q.category === state.options.set);
+            if (tempFiltered.length > 0) {
+                filtered = tempFiltered;
+            } else {
+                // If filter results in empty (e.g. Spicy selected but none exist), fallback to all
+                // This matches the "choices have no effect" message
+                console.log('Selection yielded no results, falling back to all');
+            }
         }
 
         // Deep copy

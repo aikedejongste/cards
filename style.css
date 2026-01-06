@@ -158,6 +158,14 @@ body {
     box-shadow: var(--shadow-sm);
 }
 
+.hint-text {
+    font-size: 0.75rem;
+    color: #999;
+    margin-top: 0.8rem;
+    text-align: center;
+    font-weight: 500;
+}
+
 .primary-btn {
     width: 100%;
     padding: 1.2rem;
