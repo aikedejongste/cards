@@ -70,7 +70,8 @@ body {
 }
 
 /* Start Screen */
-#start-screen .content {
+#start-screen .content,
+#about-screen .content {
     text-align: center;
     padding: 2.5rem;
     background: var(--card-bg);
@@ -182,6 +183,47 @@ body {
 
 .primary-btn:active {
     transform: scale(0.98);
+}
+
+#about-link {
+    display: inline-block;
+    margin-top: 2rem;
+    color: #bbb;
+    font-size: 0.85rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#about-link:hover {
+    color: #999;
+}
+
+.about-body {
+    text-align: left;
+    margin: 1.5rem 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-body p {
+    margin-bottom: 1rem;
+}
+
+.secondary-btn {
+    width: 100%;
+    padding: 1rem;
+    background: #f0f0f5;
+    color: #666;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.secondary-btn:active {
+    background: #e5e5ea;
 }
 
 /* Game Screen */

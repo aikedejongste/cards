@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const elements = {
         startScreen: document.getElementById('start-screen'),
         gameScreen: document.getElementById('game-screen'),
+        aboutScreen: document.getElementById('about-screen'),
+        aboutLink: document.getElementById('about-link'),
+        aboutBackBtn: document.getElementById('about-back-btn'),
         setBtns: document.querySelectorAll('.set-btn'),
         shuffleToggle: document.getElementById('shuffle-toggle'),
         startBtn: document.getElementById('start-btn'),
@@ -65,6 +68,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Start Game
         elements.startBtn.addEventListener('click', startGame);
+
+        // About
+        elements.aboutLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            elements.startScreen.classList.remove('active');
+            elements.aboutScreen.classList.add('active');
+        });
+
+        elements.aboutBackBtn.addEventListener('click', () => {
+            elements.aboutScreen.classList.remove('active');
+            elements.startScreen.classList.add('active');
+        });
 
         // Exit Game
         elements.exitBtn.addEventListener('click', showStartScreen);
