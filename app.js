@@ -84,39 +84,54 @@ document.addEventListener('DOMContentLoaded', () => {
         // Exit Game
         elements.exitBtn.addEventListener('click', showStartScreen);
 
-        // Card Interaction (Next Question)
-        elements.card.addEventListener('click', () => nextCard('left'));
+        // Card Interaction: tap right half -> next, left half -> previous
+        elements.card.addEventListener('click', (e) => {
+            if (isForwardZone(e.clientX, e.clientY)) {
+                nextCard();
+            } else {
+                prevCard();
+            }
+        });
+
+        function isForwardZone(x, y) {
+            const isPortrait = window.innerHeight > window.innerWidth;
+            // In portrait the game screen is rotated 90deg, so the visual
+            // right half is the physical bottom half of the screen
+            return isPortrait ? y > window.innerHeight / 2 : x > window.innerWidth / 2;
+        }
 
         // Basic Swipe Support
         let touchStartX = 0;
         let touchStartY = 0;
-        let touchEndX = 0;
-        let touchEndY = 0;
 
         elements.card.addEventListener('touchstart', e => {
-            touchStartX = e.changedTouches[0].screenX;
-            touchStartY = e.changedTouches[0].screenY;
+            touchStartX = e.changedTouches[0].clientX;
+            touchStartY = e.changedTouches[0].clientY;
         });
 
         elements.card.addEventListener('touchend', e => {
-            touchEndX = e.changedTouches[0].screenX;
-            touchEndY = e.changedTouches[0].screenY;
-            handleSwipe();
+            const touchEndX = e.changedTouches[0].clientX;
+            const touchEndY = e.changedTouches[0].clientY;
+            if (handleSwipe(touchEndX, touchEndY)) {
+                // Swipe handled; suppress the follow-up click
+                e.preventDefault();
+            }
         });
 
-        function handleSwipe() {
+        function handleSwipe(touchEndX, touchEndY) {
             const isPortrait = window.innerHeight > window.innerWidth;
 
             if (isPortrait) {
                 // In portrait, visual "left/right" corresponds to physical Up/Down (Y axis) due to rotation
                 // Swipe Up (physically) -> Visually Left -> Next Card
-                if (touchEndY < touchStartY - 50) nextCard('left');
-                if (touchEndY > touchStartY + 50) nextCard('right');
+                if (touchEndY < touchStartY - 50) { nextCard(); return true; }
+                if (touchEndY > touchStartY + 50) { prevCard(); return true; }
             } else {
                 // In landscape, visual "left/right" corresponds to physical Left/Right (X axis)
-                if (touchEndX < touchStartX - 50) nextCard('left');
-                if (touchEndX > touchStartX + 50) nextCard('right');
+                if (touchEndX < touchStartX - 50) { nextCard(); return true; }
+                if (touchEndX > touchStartX + 50) { prevCard(); return true; }
             }
+            return false;
         }
     }
 
@@ -193,27 +208,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const question = state.currentSet[state.currentIndex];
         elements.questionText.innerText = question.text;
 
-        // Reset card animation classes
+        // Restart the quick pop-in animation
         elements.card.className = '';
         void elements.card.offsetWidth; // trigger reflow
         elements.card.classList.add('slide-in');
     }
 
-    let isAnimating = false;
+    function nextCard() {
+        state.currentIndex = (state.currentIndex + 1) % state.currentSet.length;
+        displayCard();
+    }
 
-    function nextCard(direction = 'left') {
-        if (isAnimating) return;
-        isAnimating = true;
-
-        const exitClass = direction === 'right' ? 'slide-out-right' : 'slide-out-left';
-
-        elements.card.classList.add(exitClass);
-
-        // Total delay: Animation time (400ms) + User pause (200ms)
-        setTimeout(() => {
-            state.currentIndex = (state.currentIndex + 1) % state.currentSet.length;
-            displayCard();
-            isAnimating = false;
-        }, 600);
+    function prevCard() {
+        state.currentIndex = (state.currentIndex - 1 + state.currentSet.length) % state.currentSet.length;
+        displayCard();
     }
 });
