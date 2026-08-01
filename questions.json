@@ -2,346 +2,441 @@
     {
         "id": 1,
         "text": "What was your favorite moment from yesterday?",
-        "category": "neutral"
+        "category": "starters"
     },
     {
         "id": 2,
         "text": "you won an award for changing the world, what was it for?",
-        "category": "neutral"
+        "category": "normal"
     },
     {
         "id": 3,
         "text": "What sexual experiences would you like to have?",
-        "category": "neutral"
+        "category": "spicy"
     },
     {
         "id": 4,
         "text": "When was the last time you fell in love?",
-        "category": "neutral"
+        "category": "personal"
     },
     {
         "id": 5,
         "text": "It's skillshare night. What will you talk about?",
-        "category": "neutral"
+        "category": "starters"
     },
     {
         "id": 6,
         "text": "If you had to convince someone you are really smart, what would you do?",
-        "category": "neutral"
+        "category": "normal"
     },
     {
         "id": 7,
         "text": "what strong point is also your weakness?",
-        "category": "neutral"
+        "category": "deep"
     },
     {
         "id": 8,
         "text": "What is something you have bought this year and still value?",
-        "category": "neutral"
+        "category": "starters"
     },
     {
         "id": 9,
         "text": "What is a memorable weekend you've had?",
-        "category": "neutral"
+        "category": "starters"
     },
     {
         "id": 10,
         "text": "If money and status were no object what career would you choose?",
-        "category": "neutral"
+        "category": "deep"
     },
     {
         "id": 11,
         "text": "What is your definition of success? And with money out of the equation?",
-        "category": "neutral"
+        "category": "deep"
     },
     {
         "id": 12,
         "text": "What makes you happy?",
-        "category": "neutral"
+        "category": "deep"
     },
     {
         "id": 13,
         "text": "What makes you feel alive?",
-        "category": "neutral"
+        "category": "deep"
     },
     {
         "id": 14,
         "text": "What's a good advice you have received?",
-        "category": "neutral"
+        "category": "normal"
     },
     {
         "id": 15,
         "text": "What's a compliment you received that meant a lot to you?",
-        "category": "neutral"
+        "category": "personal"
     },
     {
         "id": 16,
         "text": "What is your idea of a perfect day?",
-        "category": "neutral"
+        "category": "starters"
     },
     {
         "id": 17,
         "text": "What is a thing that you wish people could understand about you better?",
-        "category": "neutral"
+        "category": "deep"
     },
     {
         "id": 18,
         "text": "What is the last thing you did for the first time?",
-        "category": "neutral"
+        "category": "starters"
     },
     {
         "id": 19,
         "text": "What are you proud of?",
-        "category": "neutral"
+        "category": "personal"
     },
     {
         "id": 20,
         "text": "If you could time travel, when would you go?",
-        "category": "neutral"
+        "category": "normal"
     },
     {
         "id": 21,
         "text": "What is the hardest thing you said no to lately?",
-        "category": "neutral"
+        "category": "personal"
     },
     {
         "id": 22,
         "text": "When did you last think “no, not again”?",
-        "category": "neutral"
+        "category": "normal"
     },
     {
         "id": 23,
         "text": "What is a non popular opinion that you hold?",
-        "category": "neutral"
+        "category": "normal"
     },
     {
         "id": 24,
         "text": "What charges you? What drains you?",
-        "category": "neutral"
+        "category": "deep"
     },
     {
         "id": 25,
         "text": "What are you content about in your life right now?",
-        "category": "neutral"
+        "category": "deep"
     },
     {
         "id": 26,
         "text": "What's a period in your life when you were content? What about it could you incorporate into your current life?",
-        "category": "neutral"
+        "category": "deep"
     },
     {
         "id": 27,
         "text": "What's a routine that you keep and are proud of?",
-        "category": "neutral"
+        "category": "normal"
     },
     {
         "id": 28,
         "text": "What is something good in your life that resulted from something bad?",
-        "category": "neutral"
+        "category": "deep"
     },
     {
         "id": 29,
         "text": "What's the weirdest way you've been hit on?",
-        "category": "neutral"
+        "category": "spicy"
     },
     {
         "id": 30,
         "text": "What's a weird thing you find attractive?",
-        "category": "neutral"
+        "category": "spicy"
     },
     {
         "id": 31,
         "text": "what is a stereotype of your [gender, race, etc] that is not true for you?",
-        "category": "neutral"
+        "category": "personal"
     },
     {
         "id": 32,
         "text": "what's a thing you let go off, that you wish you hadn't?",
-        "category": "neutral"
+        "category": "personal"
     },
     {
         "id": 33,
         "text": "which podcaster do you admire and what do you disagree with them about?",
-        "category": "neutral"
+        "category": "normal"
     },
     {
         "id": 34,
         "text": "what is a service that you pay for and is worth the money",
-        "category": "neutral"
+        "category": "starters"
     },
     {
         "id": 35,
         "text": "What's something that happened to you under the influence of substances?",
-        "category": "neutral"
+        "category": "personal"
     },
     {
         "id": 36,
         "text": "What's a cringe moment you had?",
-        "category": "neutral"
+        "category": "normal"
     },
     {
         "id": 37,
         "text": "What is one thing where you resemble your parents, and one where you are the opposite?",
-        "category": "neutral"
+        "category": "personal"
     },
     {
         "id": 38,
         "text": "Share an interesting fact",
-        "category": "neutral"
+        "category": "starters"
     },
     {
         "id": 39,
         "text": "What are signs that someone is right for you?",
-        "category": "neutral"
+        "category": "deep"
     },
     {
         "id": 40,
         "text": "how can we help you right now?",
-        "category": "neutral"
+        "category": "deep"
     },
     {
         "id": 41,
         "text": "If you could teleport, where would you go?",
-        "category": "neutral"
+        "category": "starters"
     },
     {
         "id": 42,
         "text": "what do you think is a good predictor of relationship success?",
-        "category": "neutral"
+        "category": "deep"
     },
     {
         "id": 43,
         "text": "Give a sex tip or sex advice",
-        "category": "neutral"
+        "category": "spicy"
     },
     {
         "id": 44,
         "text": "Tell us about a paranormal experience you've had",
-        "category": "neutral"
+        "category": "normal"
     },
     {
         "id": 45,
         "text": "Tell us about an encounter you had with the police",
-        "category": "neutral"
+        "category": "normal"
     },
     {
         "id": 46,
         "text": "What's something you've never done and want to do before you die",
-        "category": "neutral"
+        "category": "deep"
     },
     {
         "id": 47,
         "text": "What's a bold decision you've made?",
-        "category": "neutral"
+        "category": "personal"
     },
     {
         "id": 48,
         "text": "What's something you changed your mind about?",
-        "category": "neutral"
+        "category": "deep"
     },
     {
         "id": 49,
         "text": "What stands out in your diet or eating habits?",
-        "category": "neutral"
+        "category": "starters"
     },
     {
         "id": 50,
         "text": "What's a song that reminds you of an event, and what's the event?",
-        "category": "neutral"
+        "category": "normal"
     },
     {
         "id": 51,
         "text": "What's something someone said you still think about?",
-        "category": "neutral"
+        "category": "deep"
     },
     {
         "id": 52,
         "text": "When were you confident but still wrong",
-        "category": "neutral"
+        "category": "personal"
     },
     {
         "id": 53,
         "text": "What is a lie that you've told?",
-        "category": "neutral"
+        "category": "personal"
     },
     {
         "id": 54,
         "text": "If there were no consequences, what's your ideal living arrangement? [alone / family / community / a mix / ... ]",
-        "category": "neutral"
+        "category": "deep"
     },
     {
         "id": 55,
         "text": "What's one thing you want to achieve before your next birthday / milestone birthday?",
-        "category": "neutral"
+        "category": "normal"
     },
     {
         "id": 56,
         "text": "What's a false assumption people make about you?",
-        "category": "neutral"
+        "category": "personal"
     },
     {
         "id": 57,
         "text": "Name a strange thing you have done for money",
-        "category": "neutral"
+        "category": "normal"
     },
     {
         "id": 58,
         "text": "What is the closest you've been to death?",
-        "category": "neutral"
+        "category": "personal"
     },
     {
         "id": 59,
         "text": "What is something exciting in your life right now?",
-        "category": "neutral"
+        "category": "starters"
     },
     {
         "id": 60,
         "text": "What's a relationship obstacle you've overcome, and what's the lesson there?",
-        "category": "neutral"
+        "category": "deep"
     },
     {
         "id": 61,
         "text": "What's a fun sexual/sensual experience that you had",
-        "category": "neutral"
+        "category": "spicy"
     },
     {
         "id": 62,
         "text": "What's a weird coincidence or synchronicity you've had",
-        "category": "neutral"
+        "category": "normal"
     },
     {
         "id": 63,
         "text": "What were your 15 minutes of fame?",
-        "category": "neutral"
+        "category": "normal"
     },
     {
         "id": 64,
         "text": "What's a meaningful thing you share with someone? (physical or digital)",
-        "category": "neutral"
+        "category": "personal"
     },
     {
         "id": 65,
         "text": "What's the best thing you got from a bad relationship or friendship?",
-        "category": "neutral"
+        "category": "deep"
     },
     {
         "id": 66,
         "text": "What is something good about your relationship?",
-        "category": "neutral"
+        "category": "personal"
     },
     {
         "id": 67,
         "text": "what's a nice thing a stranger has done for you?",
-        "category": "neutral"
+        "category": "starters"
     },
     {
         "id": 68,
         "text": "what's a nice thing you've done for a stranger",
-        "category": "neutral"
+        "category": "starters"
     },
     {
         "id": 69,
         "text": "What's a positive side of being single, for you?",
-        "category": "neutral"
+        "category": "normal"
+    },
+    {
+        "id": 70,
+        "text": "If you had to choose a period of your life to make a movie of",
+        "category": "personal"
+    },
+    {
+        "id": 71,
+        "text": "Share a personal story about karma",
+        "category": "normal"
+    },
+    {
+        "id": 72,
+        "text": "Tell us about a time your body acted before your brain",
+        "category": "normal"
+    },
+    {
+        "id": 73,
+        "text": "Have you ever found out you made a positive impact on someone's life",
+        "category": "personal"
+    },
+    {
+        "id": 74,
+        "text": "What is something you misunderstood as a child",
+        "category": "starters"
+    },
+    {
+        "id": 75,
+        "text": "How did you kill the mood?",
+        "category": "spicy"
+    },
+    {
+        "id": 76,
+        "text": "what's an unprofessional thing you've done at work?",
+        "category": "normal"
+    },
+    {
+        "id": 77,
+        "text": "Tell us about an embarrassing first time you had doing something",
+        "category": "personal"
+    },
+    {
+        "id": 78,
+        "text": "When were you starstruck by meeting a famous person? or who would you like to meet?",
+        "category": "normal"
+    },
+    {
+        "id": 79,
+        "text": "Go through your notes and tell us about one",
+        "category": "starters"
+    },
+    {
+        "id": 80,
+        "text": "Tell us about a moment you realised you were in love",
+        "category": "personal"
+    },
+    {
+        "id": 81,
+        "text": "If you could master a skill instantly, what would it be?",
+        "category": "starters"
+    },
+    {
+        "id": 82,
+        "text": "What's your guilty pleasure book/movie/TV show?",
+        "category": "starters"
+    },
+    {
+        "id": 83,
+        "text": "What's something that was right for you once and isn't anymore?",
+        "category": "deep"
+    },
+    {
+        "id": 84,
+        "text": "What's a special way somebody showed you they love you (or you to them)",
+        "category": "personal"
+    },
+    {
+        "id": 85,
+        "text": "if your life is a movie and people have watched up until now, what would they be screaming at the screen?",
+        "category": "deep"
+    },
+    {
+        "id": 86,
+        "text": "What's something you've done and will never do again?",
+        "category": "personal"
+    },
+    {
+        "id": 87,
+        "text": "What's a thing you've done once and you'd like to do again?",
+        "category": "normal"
+    },
+    {
+        "id": 88,
+        "text": "What would be your stripper name?",
+        "category": "spicy"
     }
 ]
